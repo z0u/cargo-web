@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+        {% block head %}
+        <meta charset="utf-8" />
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        <!--[if lt IE 9]><script src="http://www.sturm.com.au/shared/ie-html5-1.0.js"></script><![endif]-->
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" />
+        {% endblock head %}
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+        </header><!-- /#banner -->
+
+        <div class="container">
+        {% block content %}
+        {% endblock %}
+        </div><!-- /.container -->
+
+        <footer id="contentinfo" class="body">
+
+        <nav id="menu"><ul>
+        <li><a href="/">Home</a></li>
+        {% for title, link in MENUITEMS %}
+            <li><a href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
+        {% if DISPLAY_PAGES_ON_MENU %}
+          {% for p in PAGES %}
+            <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+          {% endfor %}
+        {% else %}
+          {% if DISPLAY_CATEGORIES_ON_MENU %}
+            {% for cat, null in categories %}
+              <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+            {% endfor %}
+          {% endif %}
+        {% endif %}
+        </ul></nav><!-- /#menu -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

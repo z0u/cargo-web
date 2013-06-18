@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="feature" class="hero-unit">
+<img src="/theme/images/climbing_leaf_square.jpg" alt="" style="float: left; margin: 0 2.5em 0 0; width: 320px; height: 320px;" />
+<h1>Someone's stolen the postie's shell!</h1>
+<p>Join Cargo in the adventure, exploring the world from a snail's point of view! Solve puzzles and collect items to work your way to the top of the tree, where the nefarious Bird awaits.</p>
+<form method="get" action="/pages/order.html">
+<button class="btn btn-primary">Buy the game</button>
+</form>
+</div>
+
+<div class="row">
+<div class="span6">
+<p class="lead">Cargo lives on a quiet island, working as a postsnail. She is excellent at her job. She has been known to sleep in a little, but no one really expects fast deliveries. Life is good - until one day, when things start disappearing from the island. Now, she must take part in a desperate race to get back the things that were stolen.</p>
+
+<!--
+<h2>Buy the game</h2>
+<p><em>Please tell us how much you'd like to pay.</em></p>
+<form>
+<fieldset class="well">
+<p><label>Name your price:</label> <input type="text" name="price" /></p>
+</select>
+<button type="submit" class="btn btn-primary">Buy now</button>
+</fieldset>
+</form>
+-->
+
+<h2>Cargo is <em>free software</em></h2>
+<p><em>Free software</em> doesn't mean "free of charge". We ask you to buy a copy of the game. Free software actually means that this game respects your freedom. It does this by endorsing your rights to use the game in any way you like, study the source code, modify the game and share it with your friends. These are fundamental values of the <a href="http://www.gnu.org/philosophy/free-sw.html">free software</a> movement; a movement for the freedom of people who use software.</p>
+
+Unlike many games, Cargo is also free of <abbr title="Digital Restrictions Management (a.k.a. digital handcuffs)">DRM</abbr> and other technical restrictions.</p>
+
+<h2>The making of Cargo</h2>
+<p>Cargo is an independent free software game. Read more about <a href="/pages/making-of-cargo.html">how Cargo was made</a>.</p>
+
+<h2>Blog</h2>
+<dl>
+{% for article in articles_page.object_list %}
+<dt><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a> ({{ article.locale_date }})</dt>
+<dd>
+{{ article.summary }}
+</dd>
+{% endfor %}
+</div><!-- end span6 -->
+
+<div class="span6">
+<ul class="thumbnails">
+<li class="span6"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-bigleaf.png" alt="" width="400" height="240" /></a></li>
+</ul>
+
+<ul class="thumbnails">
+<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-clover.png" alt="" width="400" height="240" /></a></li>
+<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-firefly.png" alt="" width="400" height="240" /></a></li>
+</ul>
+
+<ul class="thumbnails">
+<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-lighthouse.png" alt="" width="400" height="240" /></a></li>
+<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-menu.png" alt="" width="400" height="240" /></a></li>
+</ul>
+
+<ul class="thumbnails">
+<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-salt.png" alt="" width="400" height="240" /></a></li>
+<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-saucebar.png" alt="" width="400" height="240" /></a></li>
+</ul>
+
+<ul class="thumbnails">
+<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-spider1.png" alt="" width="400" height="240" /></a></li>
+<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-spider2.png" alt="" width="400" height="240" /></a></li>
+</ul>
+
+<ul class="thumbnails">
+<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-worm.png" alt="" width="400" height="240" /></a></li>
+</ul>
+</div><!-- end span6 -->
+</div><!-- end row -->
+{% endblock content %}
