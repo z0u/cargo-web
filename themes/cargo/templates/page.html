@@ -5,5 +5,7 @@
     {% import 'translations.html' as translations with context %}
     {{ translations.translations_for(page) }}
 
+    <div class="row-fluid">
     {{ page.content }}
+    </div>
 {% endblock %}

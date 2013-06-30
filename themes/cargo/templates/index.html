@@ -2,38 +2,50 @@
 
 {% block content %}
 <div id="feature" class="hero-unit">
-<img src="/theme/images/climbing_leaf_square.jpg" alt="" style="float: left; margin: 0 2.5em 0 0; width: 320px; height: 320px;" />
+<div class="row-fluid">
+<div class="span5">
+<img src="/theme/images/climbing_leaf_square.jpg" class="img-rounded" alt="" />
+</div>
+<div class="span7">
 <h1>Someone's stolen the postie's shell!</h1>
 <p>Join Cargo in the adventure, exploring the world from a snail's point of view! Solve puzzles and collect items to work your way to the top of the tree, where the nefarious Bird awaits.</p>
-<form method="get" action="/pages/order.html">
-<button class="btn btn-primary">Buy the game</button>
-</form>
+</div>
+</div>
 </div>
 
-<div class="row">
+<div class="row-fluid">
 <div class="span6">
 <p class="lead">Cargo lives on a quiet island, working as a postsnail. She is excellent at her job. She has been known to sleep in a little, but no one really expects fast deliveries. Life is good - until one day, when things start disappearing from the island. Now, she must take part in a desperate race to get back the things that were stolen.</p>
 
-<!--
-<h2>Buy the game</h2>
-<p><em>Please tell us how much you'd like to pay.</em></p>
-<form>
-<fieldset class="well">
-<p><label>Name your price:</label> <input type="text" name="price" /></p>
-</select>
-<button type="submit" class="btn btn-primary">Buy now</button>
-</fieldset>
+<h2>Download</h2>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="alex@phatcore.com">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="item_name" value="Cargo videogame">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="button_subtype" value="services">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="return" value="http://cargo.lille.sturm.com.au/pages/thanks.html">
+<label for="amount">Name your price (USD):</label>
+<div class="input-append">
+<input class="span3" type="text" id="amount" name="amount" value="19.95">
+<button class="btn btn-primary" type="submit">Buy with PayPal</button>
+</div>
 </form>
--->
 
-<h2>Cargo is <em>free software</em></h2>
-<p><em>Free software</em> doesn't mean "free of charge". We ask you to buy a copy of the game. Free software actually means that this game respects your freedom. It does this by endorsing your rights to use the game in any way you like, study the source code, modify the game and share it with your friends. These are fundamental values of the <a href="http://www.gnu.org/philosophy/free-sw.html">free software</a> movement; a movement for the freedom of people who use software.</p>
-
-Unlike many games, Cargo is also free of <abbr title="Digital Restrictions Management (a.k.a. digital handcuffs)">DRM</abbr> and other technical restrictions.</p>
+<p><em>We understand that not everyone is able to pay or has a credit card or PayPal account. It's ok to <a href="/pages/thanks.html">pay zero</a> for the game.</em></p>
 
 <h2>The making of Cargo</h2>
 <p>Cargo is an independent free software game. Read more about <a href="/pages/making-of-cargo.html">how Cargo was made</a>.</p>
 
+<h2>Cargo is <em>free software</em></h2>
+<p><em>Free software</em> doesn't mean "free of charge". We ask you to buy a copy of the game. Free software actually means that this game respects your freedom. It does this by endorsing your rights to use the game in any way you like, study the source code, modify the game and share it with your friends. These are fundamental values of the <a href="http://www.gnu.org/philosophy/free-sw.html">free software</a> movement; a movement for the freedom of people who use software.</p>
+
+<p>Unlike many games, Cargo is also free of <abbr title="Digital Restrictions Management (a.k.a. digital handcuffs)">DRM</abbr> and other technical restrictions.</p>
+
+<!--
 <h2>Blog</h2>
 <dl>
 {% for article in articles_page.object_list %}
@@ -42,36 +54,21 @@ Unlike many games, Cargo is also free of <abbr title="Digital Restrictions Manag
 {{ article.summary }}
 </dd>
 {% endfor %}
+</dl>
+-->
 </div><!-- end span6 -->
 
-<div class="span6">
-<ul class="thumbnails">
-<li class="span6"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-bigleaf.png" alt="" width="400" height="240" /></a></li>
-</ul>
+<div class="span6" id="home-screenshots">
 
-<ul class="thumbnails">
-<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-clover.png" alt="" width="400" height="240" /></a></li>
-<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-firefly.png" alt="" width="400" height="240" /></a></li>
-</ul>
+<iframe id="ytplayer" type="text/html" width="400" height="300" src="http://www.youtube.com/embed/rw0oFdRlW2o" frameborder="0" ></iframe>
 
-<ul class="thumbnails">
-<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-lighthouse.png" alt="" width="400" height="240" /></a></li>
-<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-menu.png" alt="" width="400" height="240" /></a></li>
-</ul>
-
-<ul class="thumbnails">
-<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-salt.png" alt="" width="400" height="240" /></a></li>
-<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-saucebar.png" alt="" width="400" height="240" /></a></li>
-</ul>
-
-<ul class="thumbnails">
-<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-spider1.png" alt="" width="400" height="240" /></a></li>
-<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-spider2.png" alt="" width="400" height="240" /></a></li>
-</ul>
-
-<ul class="thumbnails">
-<li class="span3"><a href="#" class="thumbnail"><img src="/theme/images/Cargo-worm.png" alt="" width="400" height="240" /></a></li>
-</ul>
+<a href="/theme/images/Cargo-bigleaf.png"><img src="/theme/images/Cargo-bigleaf.png" class="img-rounded" alt="" width="400" height="240" /></a>
+<a href="/theme/images/Cargo-clover.png"><img src="/theme/images/Cargo-clover.png" class="img-rounded" alt="" width="400" height="240" /></a>
+<a href="/theme/images/Cargo-firefly.png"><img src="/theme/images/Cargo-firefly.png" class="img-rounded" alt="" width="400" height="240" /></a>
+<a href="/theme/images/Cargo-lighthouse.png"><img src="/theme/images/Cargo-lighthouse.png" class="img-rounded" alt="" width="400" height="240" /></a>
+<a href="/theme/images/Cargo-menu.png"><img src="/theme/images/Cargo-menu.png" class="img-rounded" alt="" width="400" height="240" /></a>
+<a href="/theme/images/Cargo-saucebar.png"><img src="/theme/images/Cargo-saucebar.png" class="img-rounded" alt="" width="400" height="240" /></a>
+<a href="/theme/images/Cargo-spider1.png"><img src="/theme/images/Cargo-spider1.png" class="img-rounded" alt="" width="400" height="240" /></a>
 </div><!-- end span6 -->
 </div><!-- end row -->
 {% endblock content %}

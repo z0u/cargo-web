@@ -12,7 +12,7 @@ def deploy(initial=False):
     Use install=True for installing a new site.
     """
     transfer_files()
-    prepare_virtualenv(initial)
+    #prepare_virtualenv(initial)
     #prepare_django()
     #reload_gunicorn()
     flush_memcached()

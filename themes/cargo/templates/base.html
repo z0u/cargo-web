@@ -4,15 +4,17 @@
         {% block head %}
         <meta charset="utf-8" />
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <!--[if lt IE 9]><script src="http://www.sturm.com.au/shared/ie-html5-1.0.js"></script><![endif]-->
         <link rel="stylesheet" href="{{ SITEURL }}/theme/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/bootstrap/css/bootstrap-responsive.css" />
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" />
         {% endblock head %}
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+                <h1><a href="/{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
         </header><!-- /#banner -->
 
         <div class="container">
