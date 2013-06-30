@@ -61,3 +61,11 @@ In another, run the mini web-server that serves the files from `output`::
     (cargo)$ make serve
 
 You can now browse the site at `http://localhost:8000/`.
+
+
+Uploading the website
+---------------------
+
+Currently only Ben is able to do this::
+
+    $ rsync -avz output/ lille:/home/web/cargo/htdocs
