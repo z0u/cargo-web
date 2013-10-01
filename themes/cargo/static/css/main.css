@@ -14,11 +14,22 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  line-height: 1.5em;
 }
 
-h1 {
+h1, #feature .lead {
   font-family: Gochi Hand, sans-serif;
   font-weight: normal;
+  text-shadow: 1px 1px 5px white;
+  color: black;
+  line-height: 1.0em;
+}
+h1 {
+  text-align: center;
+  margin: 1em 0;
+}
+#feature .lead {
+  font-size: 50px;
 }
 
 h2 {
@@ -63,18 +74,23 @@ body > footer .logo img {
 body > footer nav ul {
   list-style: none;
 }
+body > footer li {
+  display: inline-block;
+  margin: 0 1ex;
+}
 
 p, label {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5em;
 }
 
 /* Home page */
 #feature {
   color: black;
-  text-shadow: rgba(255, 255, 255, 1.0) 1px 1px 4px;
+  text-shadow: rgba(255, 255, 255, 1.0) 0px 0px 5px;
   background: transparent;
   overflow: auto;
+  padding: 0 3em;
 }
 
 .hero-unit {
@@ -126,6 +142,7 @@ p, label {
 #feature .row-fluid {
   background: transparent;
   box-shadow: none;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -147,5 +164,16 @@ p, label {
 .logo {
   text-align: center;
   margin: 30px 0;
+}
+.logo img {
+  padding: 0 5px;
+}
+.logo a {
+  text-decoration: none;
+}
+
+p.minor {
+  font-size: 90%;
+  color: rgba(0, 0, 0, 0.5);
 }
 
