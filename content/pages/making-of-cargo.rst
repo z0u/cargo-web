@@ -4,6 +4,8 @@ The Making of Cargo
 :slug: making-of-cargo
 :summary: Short version for index and feeds
 
+**Under construction**
+
 Cargo is an independent free software game lead by Alex Fraser.
 
  * 5 years in the making

@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<h1>S. Cargo (beta)</h1>
+<h1>S.&nbsp;Cargo (beta)</h1>
 
 <div id="feature" class="hero-unit">
   <div class="row-fluid">
@@ -12,7 +12,7 @@
     <div class="span7">
       <p class="lead">Someone's stolen the postie's shell!</p>
       <p>Join Cargo in the adventure, exploring the world from a snail's point of view! Solve puzzles and collect items to work your way to the top of the tree, where the nefarious Bird awaits.</p>
-<p><em>S. Cargo</em> is an epic 3D adventure game for GNU/Linux and Windows. A Mac version is coming soon!</p>
+<p><em>S.&nbsp;Cargo</em> is an epic 3D adventure game for GNU/Linux and Windows. A Mac version is coming soon!</p>
     </div> <!-- .span7 -->
   </div> <!-- .row-fluid -->
 </div> <!-- #feature -->
@@ -29,8 +29,52 @@
 
 <p>Current version: 0.91. Please check the <a href="/pages/requirements.html">system requirements</a> before paying. If you're not sure, you can pay zero now and come back later.</p>
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="">
 <p><strong>Note:</strong> This is a <a href="https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta" title="Wikipedia article on beta releases">beta release</a> for testing purposes. Please consider this when choosing a price.</p>
+
+<script>
+$(function() {
+  // Basic payment form validation.
+  var isNumber = function() {
+    var val = $('#amount').val();
+    return /^[0-9.]+$/.exec(val) != null;
+  };
+
+  var isEnough = function() {
+    var val = $('#amount').val();
+    var num = Number(val);
+    return num !== NaN && num >= 1;
+  };
+
+  var changed = function(e) {
+    var numerical = isNumber();
+    var enough = isEnough();
+    var valid = numerical && enough;
+
+    var group = $('#amount').closest('.control-group');
+    group.toggleClass('error', !valid);
+    group.find(':submit').toggleClass('disabled', !valid);
+    group.find('#dldbutton').toggleClass('hidden', enough);
+  };
+
+  $('#amount').change(changed);
+  $('#amount').keyup(changed);
+
+  $('#paypalform').submit(function(event) {
+    var isValid = isNumber() && isEnough();
+    if (isValid) {
+      console.log("Submitting...");
+      return;
+    }
+    console.log("This value can not be submitted");
+    event.preventDefault();
+  });
+
+  changed();
+});
+</script>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" id="paypalform" method="post" class="form-inline">
+
 <input type="hidden" name="cmd" value="_xclick">
 <input type="hidden" name="business" value="alex@phatcore.com">
 <input type="hidden" name="lc" value="US">
@@ -38,11 +82,15 @@
 <input type="hidden" name="currency_code" value="USD">
 <input type="hidden" name="button_subtype" value="services">
 <input type="hidden" name="no_note" value="0">
-<input type="hidden" name="return" value="http://cargo.lille.sturm.com.au/pages/thanks.html">
-<label for="amount">Name your price (USD):</label>
-<div class="input-append">
-<input class="span3" type="text" id="amount" name="amount" value="10">
-<button class="btn btn-primary" type="submit">Buy with PayPal</button>
+<input type="hidden" name="return" value="http://cargo.smidginsoftware.com/pages/thanks.html">
+<label for="amount">Name your price:</label><br>
+<div class="control-group">
+  <div class="input-append">
+    <input class="input-mini" type="text" id="amount" name="amount" value="10">
+    <span class="add-on">USD</span>
+  </div>
+  <button class="btn btn-primary" id="buybutton" type="submit">Buy with PayPal</button>
+  <a href="/pages/thanks.html" class="btn" id="dldbutton" class="hidden" title="Download without paying anything. No hard feelings :-)">Pay zero</a>
 </div>
 </form>
 
@@ -50,19 +98,19 @@
 
 
 <h2>About</h2>
-<p>This game was designed for people aged 8-13, but adults are sure to enjoy it too. There is no violence in this game &mdash; but you might be stung by a bee.</p>
+<p><em>S.&nbsp;Cargo</em> is a 3D adventure game. You play as Cargo the postsnail, initially delivering mail, and then exploring and solving puzzles as the story progresses. It is played on a desktop or laptop computer with a keyboard and mouse or a game pad (such as a Playstation 3 controller).</p>
 
-<p>S. Cargo is an independent free software 3D adventure game. If you are curious, you can read about <a href="/pages/making-of-cargo.html">how it was made</a>.</p>
-
-<p><em>Free software</em> doesn't mean "free of charge". We ask that you buy a copy of the game. Free software actually means that this game respects your freedom. You can use the game in any way you like, study the source code, modify the game and share it with your friends.</p>
+<p>This is a free software indy game. If you are curious, you can read about <a href="/pages/making-of-cargo.html">how it was made</a>. <em>Free software</em> doesn't mean "free of charge". We ask that you buy a copy of the game. Free software actually means that this game respects your freedom. You can use the game in any way you like, study the source code, modify it and share it with your friends.</p>
 
 <p class="logo">
-  <a href="/pages/licence.html" title="Licence details">
-    <img src="/theme/images/gpl3.png" style="height: 50px;">
-    <img src="/theme/images/cc-by-sa.png" style="height: 50px;">
-    <img src="/theme/images/drm-free.png">
-  </a>
+  <a rel="license" href="http://www.gnu.org/copyleft/gpl.html#content" title="Licence details"><img src="/theme/images/gpl3.png" style="height: 50px;"></a>
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/au/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/au/88x31.png"></a>
+  <a href="http://www.defectivebydesign.org/what_is_drm_digital_restrictions_management"><img src="/theme/images/drm-free.png"></a>
 </p>
+
+<p><em>S.&nbsp;Cargo</em> is licenced under GPL v3 and partially under CC BY-SA. Read more about it on the <a href="/pages/licence.html" title="Licence details">licence page</a>.</p>
+
+<p>This game was designed for people aged 8-13, but adults are sure to enjoy it too. There is no violence in this game &mdash; but you might be stung by a bee. There are references to a culture of drinking, but <em>sauce</em> is consumed (e.g. tomato, black bean, and honey), not alcohol.</p>
 
 <p class="minor">GPL v3 logo is copyright Christian Cadena. DRM-free label is copyright Free Software Foundation, Inc.</p>
 
@@ -70,7 +118,7 @@
 <h2>Contact us</h2>
 <p>If you have any feedback, please <a href="mailto:alex@phatcore.com?Subject=Feedback%20on%20S.%20Cargo&body=(the%20following%20fields%20are%20a%20guide%20only;%20feel%20free%20to%20re-format%20this%20message)%0AS.%20Cargo%20version:%20%0AOperating%20system:%20%0AVideo%20card:%20%0ADetails/feedback:%20">send an email to Alex</a>. If you are submitting a bug report, be sure to include information about your operating system and what version of Cargo you have.</p>
 
-<p>S. Cargo is released under the brand of <em>Smidgin</em>.</p>
+<p><em>S.&nbsp;Cargo</em> is released under the brand of <em>Smidgin</em>.</p>
 
 <div class="logo">
   <img src="/theme/images/smidgin_logo.png" alt="Smidgin logo" title="Smidgin"/>
