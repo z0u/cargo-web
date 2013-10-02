@@ -66,7 +66,7 @@ You can now browse the site at `http://localhost:8000/`.
 Uploading the website
 ---------------------
 
-    $ rsync -avz --progress output/ cargo-web@lille.sturm.com.au:/home/web/cargo/htdocs
+    $ rsync -avz --exclude=releases output/ cargo-web@lille.sturm.com.au:/home/web/cargo/htdocs
 
 
 Uploading software releases
