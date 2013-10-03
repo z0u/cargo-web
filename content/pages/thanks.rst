@@ -12,9 +12,9 @@ Thanks for purchasing Cargo. We hope you enjoy playing!
     
     <div class="btn-group input-prepend">
       <span class="add-on">GNU/Linux</span>
-      <a href="/static/releases/cargo-0.91-gnu+linux-64.tar.bz2" class="btn"
+      <a href="/static/releases/cargo-0.92-gnu+linux-64.tar.bz2" class="btn"
         title="For x86_64 CPUs running GNU/Linux"><i class="icon-download"></i> 64-bit</a>
-      <a href="/static/releases/cargo-0.91-gnu+linux-32.tar.bz2" class="btn"
+      <a href="/static/releases/cargo-0.92-gnu+linux-32.tar.bz2" class="btn"
         title="For i686 CPUs running GNU/Linux"><i class="icon-download"></i> 32-bit</a>
     </div>
     
