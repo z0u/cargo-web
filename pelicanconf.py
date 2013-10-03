@@ -27,3 +27,4 @@ DEFAULT_PAGINATION = False
 #RELATIVE_URLS = True
 
 THEME = 'themes/cargo'
+STATIC_PATHS = (['images'])
