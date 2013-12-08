@@ -132,7 +132,7 @@ p {
 }
 
 .row-fluid, #contentinfo {
-  background-color: rgba(238, 238, 238, 0.75);
+  background-color: rgba(251, 250, 255, 0.75);
 }
 
 .row-fluid {
@@ -143,7 +143,7 @@ p {
 }
 
 #feature .row-fluid {
-  background: rgba(230, 230, 230, 0.38);
+  background: rgba(246, 245, 255, 0.38);
   box-shadow: none;
   margin-top: 0;
   margin-bottom: 0;

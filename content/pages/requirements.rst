@@ -10,7 +10,7 @@ If you have a recent desktop or laptop computer, then *S. Cargo* should work on 
 Mac OS X
 ========
 
-*S. Cargo* has been tested to run well on 2013 model Mac laptops running OS X 10.6. It may not work on older Mac computers.
+*S. Cargo* has been tested to run well on 2013 model Mac laptops running OS X 10.6 with nVidia graphics cards. It may not work on older Mac computers, nor Macs with Intel graphics cards. Mac computers with AMD/ATI graphics cards have not been tested.
 
 
 GNU/Linux and Windows

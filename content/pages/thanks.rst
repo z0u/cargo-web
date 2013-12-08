@@ -15,9 +15,9 @@ GNU/Linux
     
     <div class="btn-group input-prepend">
       <span class="add-on">Download</span>
-      <a href="/static/releases/cargo-0.92-gnu+linux-64.tar.bz2" class="btn"
+      <a href="/static/releases/cargo-0.95-gnu+linux-64.tar.bz2" class="btn"
         title="For x86_64 CPUs running GNU/Linux"><i class="icon-download"></i> 64-bit</a>
-      <a href="/static/releases/cargo-0.92-gnu+linux-32.tar.bz2" class="btn"
+      <a href="/static/releases/cargo-0.95-gnu+linux-32.tar.bz2" class="btn"
         title="For i686 CPUs running GNU/Linux"><i class="icon-download"></i> 32-bit</a>
     </div>
 
@@ -30,9 +30,9 @@ Windows
     
     <div class="btn-group input-prepend">
       <span class="add-on">Download</span>
-      <a href="/static/releases/cargo-0.91-windows-64.zip" class="btn"
+      <a href="/static/releases/cargo-0.95-windows-64.zip" class="btn"
         title="For x86_64 CPUs running Windows"><i class="icon-download"></i> 64-bit</a>
-      <a href="/static/releases/cargo-0.91-windows-32.zip" class="btn"
+      <a href="/static/releases/cargo-0.95-windows-32.zip" class="btn"
         title="For i686 CPUs running Windows"><i class="icon-download"></i> 32-bit</a>
     </div>
 
@@ -45,7 +45,7 @@ Mac OS X
     
     <div class="btn-group input-prepend">
       <span class="add-on">Download</span>
-      <a href="/static/releases/cargo-0.94-mac_osx-64.zip" class="btn"
+      <a href="/static/releases/cargo-0.95-mac_osx-64.zip" class="btn"
         title="For i686 CPUs running Windows"><i class="icon-download"></i> 64-bit</a>
     </div>
 
