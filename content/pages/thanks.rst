@@ -15,13 +15,13 @@ GNU/Linux
     
     <div class="btn-group input-prepend">
       <span class="add-on">Download</span>
-      <a href="/static/releases/cargo-0.97-gnu+linux-64.tar.bz2" class="btn"
+      <a href="/static/releases/cargo-0.98-gnu+linux-64.tar.bz2" class="btn"
         title="For x86_64 CPUs running GNU/Linux"><i class="icon-download"></i> 64-bit</a>
-      <a href="/static/releases/cargo-0.97-gnu+linux-32.tar.bz2" class="btn"
+      <a href="/static/releases/cargo-0.98-gnu+linux-32.tar.bz2" class="btn"
         title="For i686 CPUs running GNU/Linux"><i class="icon-download"></i> 32-bit</a>
     </div>
 
-Download the file and double-click on it to open the archive. Copy the *cargo* folder from the archive to your desktop, and close the archive-viewing utility. Open the *cargo* folder on your desktop, and double-click on *cargo* to start the game.
+Download the file and double-click on it to open the archive. Copy the *cargo-v-0.98* folder from the archive to your desktop, and close the archive-viewing utility. Open the *cargo* folder on your desktop, and double-click on *cargo* to start the game.
 
 Windows
 =======
@@ -30,26 +30,14 @@ Windows
     
     <div class="btn-group input-prepend">
       <span class="add-on">Download</span>
-      <a href="/static/releases/cargo-0.97-windows-64.zip" class="btn"
+      <a href="/static/releases/cargo-0.98-windows-64.zip" class="btn"
         title="For x86_64 CPUs running Windows"><i class="icon-download"></i> 64-bit</a>
-      <a href="/static/releases/cargo-0.97-windows-32.zip" class="btn"
+      <a href="/static/releases/cargo-0.98-windows-32.zip" class="btn"
         title="For i686 CPUs running Windows"><i class="icon-download"></i> 32-bit</a>
     </div>
 
-Download the file and double-click on it to open the archive. Copy the *cargo* folder the archive to your desktop, and close the archive-viewing utility. Open the *cargo* folder on your desktop, and double-click on *cargo.exe* to start the game (for some users this file will simply be called "*cargo*").
+Download the file and double-click on it to open the archive. Copy the *cargo-v-0.98* folder the archive to your desktop, and close the archive-viewing utility. Open the *cargo* folder on your desktop, and double-click on *cargo.exe* to start the game (for some users this file will simply be called "*cargo*").
 
-Mac OS X
-========
-
-.. raw:: html
-    
-    <div class="btn-group input-prepend">
-      <span class="add-on">Download</span>
-      <a href="/static/releases/cargo-0.97-mac_osx-64.zip" class="btn"
-        title="For i686 CPUs running Windows"><i class="icon-download"></i> 64-bit</a>
-    </div>
-
-Download the file to your desktop. Then double-click on it to extract it; this will result in a new *cargo* folder on your desktop. Inside that folder, double-click on *cargo.app* to start the game.
 
 32 or 64 Bit?
 =============
@@ -59,6 +47,3 @@ Download the 32-bit version if you have a 32-bit CPU or operating system; otherw
 - `GNU/Linux: 32 or 64bit? <http://stackoverflow.com/questions/246007/how-to-determine-whether-a-given-linux-is-32-bit-or-64-bit>`_
 - `How about Ubuntu? <http://askubuntu.com/a/65731/81211>`_
 - `Windows: 32 or 64bit? <http://support.microsoft.com/kb/827218>`_
-
-Only recent Mac computers are supported, so only the 64-bit version is available for OS X.
-

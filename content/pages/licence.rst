@@ -21,5 +21,8 @@ This is a DRM-free_ game.
 Source Code
 ===========
 
-*S. Cargo* is written in Python, so the source code is available in the normal download. The graphical assets are editable in Blender and the GIMP - except for the first scene (the one that shows the *Smidgin* logo). The files used to generate certain assets, including the first scene and build scripts, will be made available soon.
+The source code for *S. Cargo* `is available on GitHub`_. Instructions for building it are included in the repository.
 
+*S. Cargo* is written in Python, so most of the source code is also available in the normal download. The graphical assets are editable in Blender and the GIMP - except for the first scene (the one that shows the *Smidgin* logo; you'll need to check out the source code from the repository in order to change that).
+
+.. _is available on GitHub: https://github.com/oasakfu/cargo#s-cargo
