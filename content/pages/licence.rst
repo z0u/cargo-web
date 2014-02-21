@@ -23,6 +23,6 @@ Source Code
 
 The source code for *S. Cargo* `is available on GitHub`_. Instructions for building it are included in the repository.
 
-*S. Cargo* is written in Python, so most of the source code is also available in the normal download. The graphical assets are editable in Blender and the GIMP - except for the first scene (the one that shows the *Smidgin* logo; you'll need to check out the source code from the repository in order to change that).
+*S. Cargo* is written in Python, so most of the source code is also available in the normal download. The graphical assets are editable in Blender and the GIMP - except for the first scene (the one that shows the *Smidgin* logo); that one is baked into the game executable, so you'll need to check out the source code from the repository to change it.
 
 .. _is available on GitHub: https://github.com/oasakfu/cargo#s-cargo

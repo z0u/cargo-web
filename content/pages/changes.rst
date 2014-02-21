@@ -7,6 +7,15 @@ This page summarises how each release differs from the previous one. For more de
 
 .. _commit log: https://github.com/oasakfu/cargo/commits/master
 
+1.0
+===
+
+2014-02-21
+
+Confirmed known crashing bugs on GNU/Linux are fixed. No functional changes.
+
+First non-beta release.
+
 0.98
 ====
 

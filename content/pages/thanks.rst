@@ -15,13 +15,13 @@ GNU/Linux
     
     <div class="btn-group input-prepend">
       <span class="add-on">Download</span>
-      <a href="/static/releases/cargo-0.98-gnu+linux-64.tar.bz2" class="btn"
+      <a href="/static/releases/cargo-1.0-gnu+linux-64.tar.bz2" class="btn"
         title="For x86_64 CPUs running GNU/Linux"><i class="icon-download"></i> 64-bit</a>
-      <a href="/static/releases/cargo-0.98-gnu+linux-32.tar.bz2" class="btn"
+      <a href="/static/releases/cargo-1.0-gnu+linux-32.tar.bz2" class="btn"
         title="For i686 CPUs running GNU/Linux"><i class="icon-download"></i> 32-bit</a>
     </div>
 
-Download the file and double-click on it to open the archive. Copy the *cargo-v-0.98* folder from the archive to your desktop, and close the archive-viewing utility. Open the *cargo* folder on your desktop, and double-click on *cargo* to start the game.
+Download the file and double-click on it to open the archive. Copy the *cargo-1.0* folder from the archive to your desktop, and close the archive-viewing utility. Open the *cargo-1.0* folder on your desktop, and double-click on *cargo* to start the game.
 
 Windows
 =======
@@ -30,13 +30,13 @@ Windows
     
     <div class="btn-group input-prepend">
       <span class="add-on">Download</span>
-      <a href="/static/releases/cargo-0.98-windows-64.zip" class="btn"
+      <a href="/static/releases/cargo-1.0-windows-64.zip" class="btn"
         title="For x86_64 CPUs running Windows"><i class="icon-download"></i> 64-bit</a>
-      <a href="/static/releases/cargo-0.98-windows-32.zip" class="btn"
+      <a href="/static/releases/cargo-1.0-windows-32.zip" class="btn"
         title="For i686 CPUs running Windows"><i class="icon-download"></i> 32-bit</a>
     </div>
 
-Download the file and double-click on it to open the archive. Copy the *cargo-v-0.98* folder the archive to your desktop, and close the archive-viewing utility. Open the *cargo* folder on your desktop, and double-click on *cargo.exe* to start the game (for some users this file will simply be called "*cargo*").
+Download the file and double-click on it to open the archive. Copy the *cargo-1.0* folder the archive to your desktop, and close the archive-viewing utility. Open the *cargo-1.0* folder on your desktop, and double-click on *cargo.exe* to start the game (for some users this file will simply be called "*cargo*").
 
 
 32 or 64 Bit?
