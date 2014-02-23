@@ -6,44 +6,127 @@ Thanks
 
 .. role:: btn
 
-Thanks for purchasing Cargo. We hope you enjoy playing! Click on the button below that matches your system to download the game.
+Thanks for purchasing Cargo. We hope you enjoy playing!
 
-GNU/Linux
-=========
 
 .. raw:: html
     
-    <div class="btn-group input-prepend">
-      <span class="add-on">Download</span>
-      <a href="/static/releases/cargo-1.0-gnu+linux-64.tar.bz2" class="btn"
-        title="For x86_64 CPUs running GNU/Linux"><i class="icon-download"></i> 64-bit</a>
-      <a href="/static/releases/cargo-1.0-gnu+linux-32.tar.bz2" class="btn"
-        title="For i686 CPUs running GNU/Linux"><i class="icon-download"></i> 32-bit</a>
+    <script type="text/javascript">
+    $(function() {
+        var id = normalisePlatform()[0];
+        if (id == null)
+            id = "windows";
+        $('#platformtabs a[href="#' + id + '"]').tab('show');
+
+        var platforms = ['linux', 'windows'];
+        var arch = normalisePlatform()[1];
+        for (var i = 0; i < platforms.length; i++) {
+            var platform = platforms[i];
+            var btnselector = '#' + platform + ' .b' + arch;
+            $('#' + platform + ' .btn-main-download')
+                .attr('href', $(btnselector).first().attr('href'));
+        }
+        $('.architecture').text(arch)
+    });
+    function switchtabs(id) {
+        $('#platformtabs a[href="#' + id + '"]').tab('show');
+    };
+    </script>
+
+    <div class="tabbable">
+        <ul class="nav nav-tabs" id="platformtabs">
+            <li><a href="#linux" data-toggle="tab">GNU/Linux</a></li>
+            <li class="active"><a href="#windows" data-toggle="tab">Windows</a></li>
+            <li><a href="#mac" data-toggle="tab">Mac OS X</a></li>
+            <li><a href="#source" data-toggle="tab">Source Code</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane" id="linux">
+                <p class="text-center">
+                    <a href="#" class="btn btn-primary btn-large btn-main-download">Download S. Cargo for GNU/Linux <span class="architecture"></span>-bit</a>
+                </p>
+
+                <p>Instructions:</p>
+
+                <ol>
+                    <li>Download the file.</li>
+                    <li>Double-click on it to open the archive.</li>
+                    <li>Copy the <em>cargo-1.0</em> folder from the archive to your desktop, e.g. by dragging-and-dropping it.</li>
+                    <li>Close the archive-viewing utility.</li>
+                    <li>Open the <em>cargo-1.0</em> folder on your desktop.</li>
+                    <li>Double-click on <em>cargo</em> to start the game.</li>
+                    <li>Play it!</li>
+                    <li>Press F11 at any time to quit.</li>
+                </ol>
+
+                <p>Additional instructions are available in the file <em>readme.html</em> (inside the archive).</p>
+
+                <h3>Alternative Downloads</h3>
+                <p>It looks like you are using a <span class="architecture"></span>-bit operating system. If you are unsure, <a href="http://stackoverflow.com/questions/246007/how-to-determine-whether-a-given-linux-is-32-bit-or-64-bit">this site has information about how to find out</a>. There are <a href="http://askubuntu.com/a/65731/81211">special instructions</a> for Ubuntu.</p>
+
+                <ul>
+                <li><a href="https://dl.dropboxusercontent.com/u/35355400/cargo-1.0-gnu%2Blinux-64.tar.bz2" class="b64 btn-download" title="For x86_64 CPUs running GNU/Linux">
+                    Download the 64-bit version from Dropbox
+                </a></li>
+                <li><a href="https://dl.dropboxusercontent.com/u/35355400/cargo-1.0-gnu%2Blinux-32.tar.bz2" class="b32 btn-download" title="For i686 CPUs running GNU/Linux">
+                    Download the 32-bit version from Dropbox
+                </a></li>
+                <li><a href="/static/releases/cargo-1.0-gnu+linux-64.tar.bz2" class="b64 btn-download" title="For x86_64 CPUs running GNU/Linux">
+                    Download the 64-bit version from Smidgin
+                </a></li>
+                <li><a href="/static/releases/cargo-1.0-gnu+linux-32.tar.bz2" class="b32 btn-download" title="For i686 CPUs running GNU/Linux">
+                    Download the 32-bit version from Smidgin
+                </a></li>
+                </ul>
+            </div>
+
+            <div class="tab-pane active" id="windows">
+                <p class="text-center">
+                    <a href="#" class="btn btn-primary btn-large btn-main-download">Download S. Cargo for Windows <span class="architecture"></span>-bit</a>
+                </p>
+
+                <p>Instructions:</p>
+
+                <ol>
+                    <li>Download the file.</li>
+                    <li>Double-click on it to open the archive.</li>
+                    <li>Copy the <em>cargo-1.0</em> folder from the archive to your desktop, e.g. by dragging-and-dropping it.</li>
+                    <li>Close the archive-viewing utility.</li>
+                    <li>Open the <em>cargo-1.0</em> folder on your desktop.</li>
+                    <li>Double-click on <em>cargo.exe</em> to start the game. For some users, this file will simply be called "<em>cargo</em>".</li>
+                    <li>Play it!</li>
+                    <li>Press F11 at any time to quit.</li>
+                </ol>
+
+                <p>Additional instructions are available in the file <em>readme.html</em> (inside the archive).</p>
+
+                <h3>Alternative Downloads</h3>
+                <p>It looks like you are using a <span class="architecture"></span>-bit operating system. If you are unsure, please check <a href="http://support.microsoft.com/kb/827218">Microsoft's support site</a>.</p>
+
+                <ul>
+                <li><a href="https://dl.dropboxusercontent.com/u/35355400/cargo-1.0-windows-64.zip" class="b64 btn-download" title="For x86_64 CPUs running Windows">
+                    Download the 64-bit version from Dropbox
+                </a></li>
+                <li><a href="https://dl.dropboxusercontent.com/u/35355400/cargo-1.0-windows-32.zip" class="b32 btn-download" title="For i686 CPUs running Windows">
+                    Download the 32-bit version from Dropbox
+                </a></li>
+                <li><a href="/static/releases/cargo-1.0-windows-64.zip" class="b64 btn-download" title="For x86_64 CPUs running Windows">
+                    Download the 64-bit version from Smidgin
+                </a></li>
+                <li><a href="/static/releases/cargo-1.0-windows-32.zip" class="b32 btn-download" title="For i686 CPUs running Windows">
+                    Download the 32-bit version from Smidgin
+                </a></li>
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="mac">
+                <p>Sorry, S. Cargo is not currently available for OS X. Please see <a href="/pages/requirements.html">system requirements</a>.</p>
+
+                <p>If you download <a href="#source" onclick="switchtabs('source')">the source</a>, you can play the game by opening <em>game/cargo.blend</em> in <a href="http://blender.org/download">Blender</a> (instead of running the <em>cargo</em> executable). This should work reasonably well on all platforms that Blender runs on, including OS X. However the experience won't be as good as running the pre-built game; for example, it is more complicated to do and it won't run in full-screen mode.</p>
+            </div>
+
+            <div class="tab-pane" id="source">
+                <p>The source code for S. Cargo is available in <a href="https://github.com/oasakfu/cargo">a git repository</a>.</p>
+            </div>
+        </div>
     </div>
-
-Download the file and double-click on it to open the archive. Copy the *cargo-1.0* folder from the archive to your desktop, and close the archive-viewing utility. Open the *cargo-1.0* folder on your desktop, and double-click on *cargo* to start the game.
-
-Windows
-=======
-
-.. raw:: html
-    
-    <div class="btn-group input-prepend">
-      <span class="add-on">Download</span>
-      <a href="/static/releases/cargo-1.0-windows-64.zip" class="btn"
-        title="For x86_64 CPUs running Windows"><i class="icon-download"></i> 64-bit</a>
-      <a href="/static/releases/cargo-1.0-windows-32.zip" class="btn"
-        title="For i686 CPUs running Windows"><i class="icon-download"></i> 32-bit</a>
-    </div>
-
-Download the file and double-click on it to open the archive. Copy the *cargo-1.0* folder the archive to your desktop, and close the archive-viewing utility. Open the *cargo-1.0* folder on your desktop, and double-click on *cargo.exe* to start the game (for some users this file will simply be called "*cargo*").
-
-
-32 or 64 Bit?
-=============
-
-Download the 32-bit version if you have a 32-bit CPU or operating system; otherwise, download the 64-bit version. See the following links to determine which version you should download:
-
-- `GNU/Linux: 32 or 64bit? <http://stackoverflow.com/questions/246007/how-to-determine-whether-a-given-linux-is-32-bit-or-64-bit>`_
-- `How about Ubuntu? <http://askubuntu.com/a/65731/81211>`_
-- `Windows: 32 or 64bit? <http://support.microsoft.com/kb/827218>`_

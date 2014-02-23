@@ -199,6 +199,14 @@ p.minor {
   display: none;
 }
 
+.big {
+    font-size: 200%;
+}
+
+.btn-download {
+    vertical-align: baseline;
+}
+
 /* Fix for lightbox conflicting with bootstrap; see http://stackoverflow.com/a/18029608/320036 */
 .lightbox .lb-image {
   max-width: inherit;
