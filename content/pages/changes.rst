@@ -7,6 +7,23 @@ This page summarises how each release differs from the previous one. For more de
 
 .. _commit log: https://github.com/oasakfu/cargo/commits/master
 
+1.02
+====
+
+2014-04-07
+
+The depth of field filter is automatically disabled for certain systems. There
+was a bug where the screen would become blank sometimes.
+
+1.01
+====
+
+2014-03-10
+
+- Fixed button in the hive defence room: makes the puzzle just a little bit
+  harder.
+- Improved some camera movements and animation in cut scenes.
+
 1.0
 ===
 

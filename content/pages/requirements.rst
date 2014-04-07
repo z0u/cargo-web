@@ -23,7 +23,7 @@ If you have a recent desktop or laptop computer, then *S. Cargo* should work on 
 Mac OS X
 ========
 
-*S. Cargo* is currently unavailable on OS X. It does work on some Mac computers, but the `required hardware is fairly rare`_. If you are super keen you can try playing in Blender by `downloading the S. Cargo source`_ - but be warned that this can be a complicated process. An official build for OS X may be published later.
+*S. Cargo* is currently unavailable on OS X. It does work on some Mac computers, but the `required hardware is fairly rare`_. If you are keen you can play in Blender by `downloading the S. Cargo source`_ - but it's a little complicated. An official build for OS X may be published later.
 
 Users have reported that *S. Cargo* can be played in a Windows virtual machine (e.g. under Parallels) on OS X.
 
