@@ -207,6 +207,10 @@ p.minor {
     vertical-align: baseline;
 }
 
+.archinfo.b64 .b32-only, .archinfo.b32 .b64-only {
+    display: none;
+}
+
 /* Fix for lightbox conflicting with bootstrap; see http://stackoverflow.com/a/18029608/320036 */
 .lightbox .lb-image {
   max-width: inherit;

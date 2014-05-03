@@ -18,7 +18,7 @@ Thanks for purchasing Cargo. We hope you enjoy playing!
             id = "windows";
         $('#platformtabs a[href="#' + id + '"]').tab('show');
 
-        var platforms = ['linux', 'windows'];
+        var platforms = ['linux', 'windows', 'mac'];
         var arch = normalisePlatform()[1];
         for (var i = 0; i < platforms.length; i++) {
             var platform = platforms[i];
@@ -26,14 +26,15 @@ Thanks for purchasing Cargo. We hope you enjoy playing!
             $('#' + platform + ' .btn-main-download')
                 .attr('href', $(btnselector).first().attr('href'));
         }
-        $('.architecture').text(arch)
+        $('.architecture').text(arch);
+        $('.archinfo').addClass('b' + arch);
     });
     function switchtabs(id) {
         $('#platformtabs a[href="#' + id + '"]').tab('show');
     };
     </script>
 
-    <div class="tabbable">
+    <div class="tabbable archinfo">
         <ul class="nav nav-tabs" id="platformtabs">
             <li><a href="#linux" data-toggle="tab">GNU/Linux</a></li>
             <li class="active"><a href="#windows" data-toggle="tab">Windows</a></li>
@@ -49,7 +50,7 @@ Thanks for purchasing Cargo. We hope you enjoy playing!
                 <p>Instructions:</p>
 
                 <ol>
-                    <li>Download the file.</li>
+                    <li>Download the <em>.tar.bz2</em> file.</li>
                     <li>Double-click on it to open the archive.</li>
                     <li>Copy the <em>cargo-1.02</em> folder from the archive to your desktop, e.g. by dragging-and-dropping it.</li>
                     <li>Close the archive-viewing utility.</li>
@@ -88,7 +89,7 @@ Thanks for purchasing Cargo. We hope you enjoy playing!
                 <p>Instructions:</p>
 
                 <ol>
-                    <li>Download the file.</li>
+                    <li>Download the <em>.zip</em> file.</li>
                     <li>Double-click on it to open the archive.</li>
                     <li>Copy the <em>cargo-1.02</em> folder from the archive to your desktop, e.g. by dragging-and-dropping it.</li>
                     <li>Close the archive-viewing utility.</li>
@@ -120,13 +121,43 @@ Thanks for purchasing Cargo. We hope you enjoy playing!
             </div>
 
             <div class="tab-pane" id="mac">
-                <p>Sorry, S. Cargo is not currently available for OS X. Please see <a href="/pages/requirements.html">system requirements</a>.</p>
+                <p class="text-center b64-only">
+                    <a href="#" class="btn btn-primary btn-large btn-main-download">Download S. Cargo for Mac OS X 64-bit</a>
+                </p>
 
-                <p>If you download <a href="#source" onclick="switchtabs('source')">the source</a>, you can play the game by opening <em>game/cargo.blend</em> in <a href="http://blender.org/download">Blender</a> (instead of running the <em>cargo</em> executable). This should work well on all platforms that Blender runs on, including OS X. However the experience won't be as good as running the pre-built game: it is more complicated and it won't run in full-screen mode.</p>
+                <p class="alert b32-only">
+                    S. Cargo is only avialble for 64-bit Macintosh computers; see <a href="/pages/requirements.html">system requirements</a>. If you are downloading for a 64-bit computer, please use the links below.
+                </p>
+
+                <p>Instructions:</p>
+
+                <ol>
+                    <li>Download the <em>.zip</em> file to your desktop.</li>
+                    <li>Double-click on it to extract the files.</li>
+                    <li>Open the new <em>cargo-1.02-beta</em> folder on your desktop.</li>
+                    <li>Double-click on <em>cargo.app</em> to start the game.</li>
+                    <li>Play it!</li>
+                    <li>Press F11 at any time to quit.</li>
+                </ol>
+
+                <p>Additional instructions are available in the file <em>readme.html</em> (inside the folder).</p>
+
+                <h3>Alternative Downloads</h3>
+
+                <ul>
+                <li><a href="https://drive.google.com/uc?id=0B9ifjT3w1yFSMHJwNkJQWjh4SW8&export=download" class="b64 btn-download" title="For x86_64 CPUs running Windows">
+                    Download the 64-bit version from Google Drive
+                </a></li>
+                <li><a href="/static/releases/cargo-1.02-beta-mac_osx-64.zip" class="b64 btn-download" title="For x86_64 CPUs running Windows">
+                    Download the 64-bit version from Smidgin
+                </a></li>
+                </ul>
+
+                <p>Note that this is a <strong>beta release</strong>. Please see <a href="/pages/requirements.html">system requirements</a> for more information.</p>
             </div>
 
             <div class="tab-pane" id="source">
-                <p>The source code for S. Cargo is available in <a href="https://github.com/oasakfu/cargo">a git repository</a>.</p>
+                <p>The source code for S. Cargo is available in <a href="https://github.com/oasakfu/cargo">a git repository</a>. Instructions for building and running from source are available there.</p>
             </div>
         </div>
     </div>

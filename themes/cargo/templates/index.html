@@ -10,7 +10,7 @@
     <div class="span7">
       <p class="lead">Someone's stolen the postie's shell!</p>
       <p>Join <strong>S. Cargo</strong> in the adventure, exploring the world from a snail's point of view! Solve puzzles and collect items to work your way to the top of the tree, where the nefarious Bird awaits.</p>
-<p><em>S.&nbsp;Cargo</em> is an epic 3D adventure game for GNU/Linux and Windows.</p>
+<p><em>S.&nbsp;Cargo</em> is an epic 3D adventure game for GNU/Linux, Windows and Mac OS X (beta).</p>
     </div> <!-- .span7 -->
   </div> <!-- .row-fluid -->
 </div> <!-- #feature -->
@@ -49,7 +49,7 @@ $(function() {
     var group = $('#amount').closest('.control-group');
     group.toggleClass('error', !valid);
     group.find(':submit').toggleClass('disabled', !valid);
-    group.find('#dldbutton').toggleClass('hidden', enough);
+    group.find('#dldbutton').toggleClass('in', !enough);
   };
 
   $('#amount').change(changed);
@@ -85,8 +85,8 @@ $(function() {
     <input class="input-mini" type="text" id="amount" name="amount" value="10">
     <span class="add-on">USD</span>
   </div>
-  <button class="btn btn-primary" id="buybutton" type="submit">Buy with PayPal</button>
-  <a href="/pages/thanks.html" class="btn" id="dldbutton" class="hidden" title="Download without paying anything. No hard feelings :-)">Pay zero</a>
+  <button class="btn btn-primary" id="buybutton" type="submit">Buy (PayPal or credit)</button>
+  <a href="/pages/thanks.html" class="btn btn-success fade" id="dldbutton" class="hidden" title="Download without paying anything. No hard feelings :-)">Pay zero</a>
 </div>
 </form>
 
@@ -119,7 +119,7 @@ $(function() {
 
 <p>If you have any trouble playing the game, please:</p>
 <ol>
-    <li>Check that you're using the latest version that is suitable for your operating system.</li>
+    <li>Check that you're using the latest version of <em>S. Cargo</em>.</li>
     <li>Look in the <a href="https://github.com/oasakfu/cargo/issues" title="Issue (bug) tracker for S. Cargo">issue tracker</a> to see if anyone else is having the same problem - you may be able to find instructions to fix the problem yourself there.</li>
     <li>If you still have trouble, feel free to <a href="https://github.com/oasakfu/cargo/issues/new" title="Page to create a new issue">create a new issue</a> and we will try to help. Be sure to include information about your computer (e.g. operating system, type of graphics card), and the version of <em>S. Cargo</em> that you have.</li>
 </ol>

@@ -20,12 +20,21 @@ If you have a recent desktop or laptop computer, then *S. Cargo* should work on 
 .. _AMD Mobility Radeon HD 5430: http://www.videocardbenchmark.net/gpu.php?gpu=Mobility+Radeon+HD+5430&id=515
 
 
-Mac OS X
-========
+Mac OS X (beta release)
+=======================
 
-*S. Cargo* is currently unavailable on OS X. It does work on some Mac computers, but the `required hardware is fairly rare`_. If you are keen you can play in Blender by `downloading the S. Cargo source`_ - but it's a little complicated. An official build for OS X may be published later.
+*S. Cargo* runs well on the Macbook Pro with Retina (2.5 GHz I5 and 8GB Ram) and the Mac Mini (2.5 GHz I5 4GB Ram).
 
-Users have reported that *S. Cargo* can be played in a Windows virtual machine (e.g. under Parallels) on OS X.
+This is a `beta release`_ of S. Cargo for **64-bit Mac OS X 10.6+**. It's fully playable, but it `might be slow on some computers`_. If you buy S. Cargo for OS X and find that it doesn't play well on your computer, you can:
 
-.. _required hardware is fairly rare: https://github.com/oasakfu/cargo/issues/2
-.. _downloading the S. Cargo source: https://github.com/oasakfu/cargo#s-cargo
+- Try running it in a Windows virtual machine e.g. using Parallels.
+- `Download the source code`_ and play the game in Blender.
+- Ask us for a refund.
+
+Any feedback about this would be appreciated. Please let us know whether it runs well for you, and what kind of Apple computer you have. You can leave a comment in the `issue tracker`_ or tweet to `@asmidgin`_.
+
+.. _beta release: http://en.wikipedia.org/wiki/Software_release_life_cycle#Beta
+.. _might be slow on some computers: https://github.com/oasakfu/cargo/issues/2
+.. _issue tracker: https://github.com/oasakfu/cargo/issues/2
+.. _@asmidgin: https://twitter.com/asmidgin
+.. _Download the source code: https://github.com/oasakfu/cargo#s-cargo
