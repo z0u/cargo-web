@@ -49,7 +49,12 @@ $(OUTPUTDIR)/%.html:
 clean:
 	[ ! -d $(OUTPUTDIR) ] || find $(OUTPUTDIR) -mindepth 1 -delete
 
-regenerate: clean
+icons: themes/cargo/static/css/cargo-icons.css
+
+themes/cargo/static/css/cargo-icons.css: themes/cargo/icons/*
+	fontcustom compile
+
+regenerate: clean icons
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 serve:
