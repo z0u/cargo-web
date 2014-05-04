@@ -41,10 +41,13 @@ help:
 	@echo '                                                                       '
 
 
-html: clean $(OUTPUTDIR)/index.html
+html: clean $(OUTPUTDIR)/index.html $(OUTPUTDIR)/robots.txt
 
 $(OUTPUTDIR)/%.html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+
+$(OUTPUTDIR)/robots.txt: $(INPUTDIR)/robots.txt
+	cp $(INPUTDIR)/robots.txt $(OUTPUTDIR)/robots.txt
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || find $(OUTPUTDIR) -mindepth 1 -delete
@@ -54,7 +57,7 @@ icons: themes/cargo/static/css/cargo-icons.css
 themes/cargo/static/css/cargo-icons.css: themes/cargo/icons/*
 	fontcustom compile
 
-regenerate: clean icons
+regenerate: clean icons $(OUTPUTDIR)/robots.txt
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 serve:
