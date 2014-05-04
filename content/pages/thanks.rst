@@ -36,24 +36,30 @@ Thanks for purchasing Cargo. We hope you enjoy playing!
 
     <div class="tabbable archinfo">
         <ul class="nav nav-tabs" id="platformtabs">
-            <li><a href="#linux" data-toggle="tab">GNU/Linux</a></li>
-            <li class="active"><a href="#windows" data-toggle="tab">Windows</a></li>
-            <li><a href="#mac" data-toggle="tab">Mac OS X</a></li>
+            <li><a href="#linux" data-toggle="tab"><i class="fa fa-linux"></i> GNU/Linux</a></li>
+            <li class="active"><a href="#windows" data-toggle="tab"><i class="fa fa-windows"></i> Windows</a></li>
+            <li><a href="#mac" data-toggle="tab"><i class="fa fa-apple"></i> Mac OS X</a></li>
             <li><a href="#source" data-toggle="tab">Source Code</a></li>
         </ul>
         <div class="tab-content">
             <div class="tab-pane" id="linux">
                 <p class="text-center">
-                    <a href="#" class="btn btn-primary btn-large btn-main-download">Download S. Cargo for GNU/Linux <span class="architecture"></span>-bit</a>
+                    <a href="#" class="btn btn-primary btn-large btn-main-download"><i class="fa fa-download"></i> Download S. Cargo for GNU/Linux <span class="architecture"></span>-bit</a>
                 </p>
 
-                <p>Instructions:</p>
+                <h3>Installing</h3>
 
                 <ol>
                     <li>Download the <em>.tar.bz2</em> file.</li>
                     <li>Double-click on it to open the archive.</li>
                     <li>Copy the <em>cargo-1.02</em> folder from the archive to your desktop, e.g. by dragging-and-dropping it.</li>
                     <li>Close the archive-viewing utility.</li>
+                </ol>
+
+                <h3>Playing</h3>
+
+                <ol>
+                    <li>Plug in your USB game pad <i class="fa fa-gamepad"></i> or joystick, if you have one.</li>
                     <li>Open the <em>cargo-1.02</em> folder on your desktop.</li>
                     <li>Double-click on <em>cargo</em> to start the game.</li>
                     <li>Play it!</li>
@@ -83,16 +89,22 @@ Thanks for purchasing Cargo. We hope you enjoy playing!
 
             <div class="tab-pane active" id="windows">
                 <p class="text-center">
-                    <a href="#" class="btn btn-primary btn-large btn-main-download">Download S. Cargo for Windows <span class="architecture"></span>-bit</a>
+                    <a href="#" class="btn btn-primary btn-large btn-main-download"><i class="fa fa-download"></i> Download S. Cargo for Windows <span class="architecture"></span>-bit</a>
                 </p>
 
-                <p>Instructions:</p>
+                <h3>Installing</h3>
 
                 <ol>
                     <li>Download the <em>.zip</em> file.</li>
                     <li>Double-click on it to open the archive.</li>
                     <li>Copy the <em>cargo-1.02</em> folder from the archive to your desktop, e.g. by dragging-and-dropping it.</li>
                     <li>Close the archive-viewing utility.</li>
+                </ol>
+
+                <h3>Playing</h3>
+
+                <ol>
+                    <li>Plug in your USB game pad <i class="fa fa-gamepad"></i> or joystick, if you have one.</li>
                     <li>Open the <em>cargo-1.02</em> folder on your desktop.</li>
                     <li>Double-click on <em>cargo.exe</em> to start the game. For some users, this file will simply be called "<em>cargo</em>".</li>
                     <li>Play it!</li>
@@ -122,18 +134,23 @@ Thanks for purchasing Cargo. We hope you enjoy playing!
 
             <div class="tab-pane" id="mac">
                 <p class="text-center b64-only">
-                    <a href="#" class="btn btn-primary btn-large btn-main-download">Download S. Cargo for Mac OS X 64-bit</a>
+                    <a href="#" class="btn btn-primary btn-large btn-main-download"><i class="fa fa-download"></i> Download S. Cargo for Mac OS X 64-bit</a>
                 </p>
 
                 <p class="alert b32-only">
                     S. Cargo is only avialble for 64-bit Macintosh computers; see <a href="/pages/requirements.html">system requirements</a>. If you are downloading for a 64-bit computer, please use the links below.
                 </p>
 
-                <p>Instructions:</p>
+                <h3>Installing</h3>
 
                 <ol>
                     <li>Download the <em>.zip</em> file to your desktop.</li>
                     <li>Double-click on it to extract the files.</li>
+                </ol>
+
+                <h3>Playing</h3>
+
+                <ol>
                     <li>Open the new <em>cargo-1.02-beta</em> folder on your desktop.</li>
                     <li>Double-click on <em>cargo.app</em> to start the game.</li>
                     <li>Play it!</li>

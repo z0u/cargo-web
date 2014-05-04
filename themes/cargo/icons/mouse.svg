@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="512"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="mouse.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="237.82459"
+     inkscape:cy="226.38765"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="917"
+     inkscape:window-x="128"
+     inkscape:window-y="88"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid5457"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-540.3622)">
+    <path
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:39.20081711;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+       d="M 290.96875 83.09375 C 290.96875 92.10626 289.23826 94.45473 287.03125 96.65625 C 284.82424 98.85777 280.34702 101.0188 273.78125 103.84375 C 267.21548 106.6687 258.51047 110.34317 251.34375 118.53125 C 247.57334 122.839 244.63004 128.24964 242.6875 134.59375 C 209.07166 135.56044 186.83088 140.36956 170.3125 150.125 C 151.70021 161.11706 143.94128 179.66428 141.15625 193.09375 C 131.4745 239.78081 135.03639 308.92919 143.8125 355.96875 C 149.48013 386.34751 160.53038 413.78237 179.15625 434.46875 C 197.78212 455.15513 224.70035 468.09375 256 468.09375 C 287.29965 468.09375 314.21789 455.15513 332.84375 434.46875 C 351.46961 413.78237 362.51987 386.34751 368.1875 355.96875 C 376.96361 308.92919 380.52551 239.78081 370.84375 193.09375 C 368.05873 179.66428 360.2998 161.11706 341.6875 150.125 C 325.95159 140.83168 305.00609 136.02314 274 134.75 C 276.44592 132.83128 279.90877 131.09168 284.625 129.0625 C 290.80526 126.40341 299.05373 123.42799 306.40625 116.09375 C 313.75877 108.75951 318.40625 97.15829 318.40625 83.09375 L 290.96875 83.09375 z M 256 173.5625 C 263.16692 173.5625 269.6878 173.74521 275.59375 174.09375 L 275.59375 258.75 C 269.62461 258.92832 263.25035 259 256.46875 259 C 248.86628 259 241.80479 258.87736 235.21875 258.65625 L 235.21875 174.1875 C 241.44463 173.79213 248.33583 173.5625 256 173.5625 z M 303.03125 177.5 C 311.98309 179.37501 318.03113 181.67871 321.75 183.875 C 330.0102 188.75331 330.53371 191.73167 332.46875 201.0625 C 335.28395 214.63785 336.69215 232.91445 336.9375 252.625 C 335.12799 252.9833 333.17336 253.33307 330.9375 253.71875 C 323.78567 254.95242 314.51367 256.21081 303.03125 257.1875 L 303.03125 177.5 z M 207.78125 177.75 L 207.78125 257 C 197.2849 256.05317 188.66957 254.87462 181.96875 253.71875 C 179.33475 253.26439 177.10726 252.85257 175.0625 252.4375 C 175.31442 232.79922 176.72505 214.59447 179.53125 201.0625 C 181.46629 191.73167 181.9898 188.75331 190.25 183.875 C 193.80393 181.77612 199.47376 179.57761 207.78125 177.75 z M 175.46875 280.4375 C 176.0982 280.55157 176.65872 280.66847 177.3125 280.78125 C 194.0632 283.6707 219.74381 286.4375 256.46875 286.4375 C 293.1937 286.4375 318.8743 283.6707 335.625 280.78125 C 335.94554 280.72596 336.21657 280.68063 336.53125 280.625 C 335.59918 305.33612 333.16672 329.9653 329.65625 348.78125 C 324.91925 374.17177 315.8056 394.82603 303.71875 408.25 C 291.6319 421.67397 277.27437 428.90625 256 428.90625 C 234.72561 428.90625 220.3681 421.67397 208.28125 408.25 C 196.1944 394.82603 187.08075 374.17177 182.34375 348.78125 C 178.82441 329.91776 176.39546 305.21133 175.46875 280.4375 z "
+       transform="translate(0,540.3622)"
+       id="rect2985" />
+  </g>
+</svg>

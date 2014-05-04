@@ -1,3 +1,6 @@
 *~
 output
 *.pyc
+sfnt2woff
+.fontcustom-manifest.json
+woff-code-*
