@@ -19,7 +19,8 @@ There are a few steps you'll need to perform once to work with this website::
 1. Install the required system packages::
 
        $ sudo apt-get install fabric python-pip python-virtualenv \
-         virtualenvwrapper ruby ruby-dev fontforge ttfautohint
+         virtualenvwrapper ruby ruby-dev fontforge ttfautohint woff-tools
+       $ sudo gem install fontcustom
 
 2. We'll install the relevant Python packages into a virtualenv. You can do this
    using the standard `virtualenv` command, but `virtualenvwrapper` makes it a
@@ -27,17 +28,15 @@ There are a few steps you'll need to perform once to work with this website::
 
    Create a Python virtual environment to store downloaded packages in::
 
-       $ mkvirtualenv cargo
+       $ virtualenv cargo
 
 3. Now activate the virtual environment::
 
-       $ workon cargo
-
-   (This is actually done automatically by `mkvirtualenv`.)
+       $ . cargo/bin/activate
 
 4. Download and install the required Python packages::
 
-       (cargo)$ pip install -r cargo_web/requirements.txt
+       (cargo)$ pip install -r requirements.txt
 
    This refers to the `requirements.txt` file in the website directory.
 
@@ -73,11 +72,14 @@ You can now browse the site at `http://localhost:8000/`.
 Uploading the website
 ---------------------
 
+Use rsync to copy the output directory to the remote web server::
+
     $ rsync -avz --exclude=releases output/ cargo-web@lille.sturm.com.au:/home/web/cargo/htdocs
 
 
 Uploading software releases
 ---------------------------
 
-    $ rsync -avz --progress *.zip *.bz2 cargo-web@lille.sturm.com.au:/home/web/cargo/htdocs/static/releases/
+Copy resources to the static/releases directory on the server::
 
+    $ rsync -avz --progress *.zip *.bz2 cargo-web@lille.sturm.com.au:/home/web/cargo/htdocs/static/releases/

@@ -51,6 +51,7 @@ $(OUTPUTDIR)/robots.txt: $(INPUTDIR)/robots.txt
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || find $(OUTPUTDIR) -mindepth 1 -delete
+	mkdir -p $(OUTPUTDIR)
 
 icons: themes/cargo/static/css/cargo-icons.css
 
