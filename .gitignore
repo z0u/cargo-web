@@ -4,3 +4,4 @@ output
 sfnt2woff
 .fontcustom-manifest.json
 woff-code-*
+cargo

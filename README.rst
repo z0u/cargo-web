@@ -22,6 +22,8 @@ There are a few steps you'll need to perform once to work with this website::
          virtualenvwrapper ruby ruby-dev fontforge ttfautohint woff-tools
        $ sudo gem install fontcustom
 
+   TODO: Update instructions to use RBM or so instead of global install.
+
 2. We'll install the relevant Python packages into a virtualenv. You can do this
    using the standard `virtualenv` command, but `virtualenvwrapper` makes it a
    little easier by providing the `mkvirtualenv` and `workon` commands.
@@ -39,14 +41,6 @@ There are a few steps you'll need to perform once to work with this website::
        (cargo)$ pip install -r requirements.txt
 
    This refers to the `requirements.txt` file in the website directory.
-
-5. Install the font creation program, to convert SVG icons into web fonts::
-
-       $ wget http://people.mozilla.com/~jkew/woff/woff-code-latest.zip
-       $ unzip woff-code-latest.zip -d sfnt2woff && pushd sfnt2woff && make && sudo mv sfnt2woff /usr/local/bin/ && popd
-       $ sudo gem install fontcustom
-
-   TODO: Update instructions to use RBM or so instead of global install.
 
 Building the website
 --------------------
